@@ -31,3 +31,4 @@ scripts/notion/seed_cache.json
 *.sw?
 supabase/.temp/
 .vercel
+.env*
