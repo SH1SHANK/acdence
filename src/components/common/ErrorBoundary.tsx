@@ -1,6 +1,7 @@
 import * as React from "react";
 import { AlertTriangle, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AcdenseIcon } from "./AcdenseLogo";
 
 interface Props {
   children: React.ReactNode;
@@ -106,9 +107,7 @@ export class AppErrorBoundary extends React.Component<
       return (
         <div className="min-h-dvh w-full bg-studio text-foreground flex flex-col items-center justify-center p-6 text-center">
           <div className="max-w-md w-full p-6 sm:p-8 rounded-2xl border border-border-default bg-surface-100 flex flex-col items-center gap-4 shadow-xl">
-            <div className="size-12 rounded-xl bg-surface-200 border border-border-default flex items-center justify-center text-brand font-bold text-lg">
-              <span className="font-heading">A</span>
-            </div>
+            <AcdenseIcon size={48} />
             <div>
               <h1 className="text-lg font-bold font-heading text-foreground">
                 Academic Command Center Unavailable

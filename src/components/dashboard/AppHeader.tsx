@@ -32,6 +32,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { AcdenseIcon } from "@/components/common/AcdenseLogo";
 import type { SyncStatus } from "@/lib/sync/types";
 import type { StudioView } from "@/components/layout/StudioSidebar";
 import {
@@ -114,12 +115,10 @@ export const AppHeader = React.memo<AppHeaderProps>(function AppHeader({
               <div className="flex flex-col gap-5">
                 {/* Brand header */}
                 <div className="flex items-center gap-2.5">
-                  <div className="size-8 rounded-lg bg-surface-200 border border-border-default flex items-center justify-center text-brand font-bold text-sm">
-                    <span className="font-heading text-brand">A</span>
-                  </div>
+                  <AcdenseIcon size={32} />
                   <div>
                     <SheetTitle className="text-sm font-bold font-heading text-foreground leading-none">
-                      Acdence
+                      Acdense
                     </SheetTitle>
                     <SheetDescription className="text-[10px] text-foreground-lighter font-mono mt-1 leading-none">
                       September 2026 Term
@@ -231,27 +230,12 @@ export const AppHeader = React.memo<AppHeaderProps>(function AppHeader({
             type="button"
             onClick={() => onSelectView?.("dashboard")}
             className="group flex items-center gap-2.5 outline-hidden focus-visible:ring-2 focus-visible:ring-brand rounded-md text-left cursor-pointer"
-            title="Acdence · IIT Madras BS Degree (Return to Dashboard)"
+            title="Acdense · IIT Madras BS Degree (Return to Dashboard)"
           >
-            <div
-              aria-hidden="true"
-              className="size-8 rounded-md bg-surface-200 border border-border-default text-brand flex items-center justify-center font-bold text-xs select-none shadow-xs group-hover:border-brand/40 group-hover:bg-surface-300 transition-colors"
-            >
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="size-4 text-brand"
-              >
-                <path d="M4 20h16M12 4L4 20M12 4l8 16M7 14h10" />
-              </svg>
-            </div>
+            <AcdenseIcon size={32} className="group-hover:opacity-90 transition-opacity" />
             <div className="flex flex-col text-left">
               <span className="text-sm sm:text-base font-bold font-heading text-foreground leading-none">
-                Acdence
+                Acdense
               </span>
               <span className="hidden sm:inline-block text-[10px] text-foreground-lighter font-normal mt-1 leading-none">
                 Academic Command Center

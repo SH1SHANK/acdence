@@ -15,6 +15,7 @@ import {
   PanelLeftOpen,
 } from "lucide-react";
 import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/components/ui/tooltip";
+import { AcdenseIcon } from "@/components/common/AcdenseLogo";
 import { cn } from "@/lib/utils";
 import type { SyncStatus } from "@/lib/sync/types";
 
@@ -165,21 +166,17 @@ export const StudioSidebar: React.FC<StudioSidebarProps> = React.memo(function S
             <button
               type="button"
               onClick={() => onSelectView("dashboard")}
-              aria-label="Acdence Academic Command Center"
+              aria-label="Acdense Academic Command Center"
               className={cn(
                 "group rounded-lg flex items-center transition-all focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2",
-                isExpanded
-                  ? "gap-2.5 p-1 -ml-1 text-left"
-                  : "size-8 bg-surface-200 border border-border-default justify-center text-brand font-bold text-sm hover:border-brand/40 hover:bg-surface-300",
+                isExpanded ? "gap-2.5 p-1 -ml-1 text-left" : "size-8 justify-center",
               )}
             >
-              <div className="size-8 rounded-lg bg-surface-200 border border-border-default flex items-center justify-center text-brand font-bold text-sm group-hover:border-brand/40 group-hover:bg-surface-300 transition-colors shrink-0">
-                <span className="font-heading text-brand">A</span>
-              </div>
+              <AcdenseIcon size={32} className="group-hover:opacity-90 transition-opacity" />
               {isExpanded && (
                 <div className="flex flex-col min-w-0">
                   <span className="text-sm font-bold font-heading text-foreground leading-none">
-                    Acdence
+                    Acdense
                   </span>
                   <span className="text-[10px] text-foreground-lighter font-mono mt-1 leading-none truncate">
                     Sep 2026 Term
