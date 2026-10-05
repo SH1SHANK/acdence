@@ -24,6 +24,7 @@ export default defineConfig({
     options: {
       typeAware: true,
       typeCheck: true,
+      ignorePatterns: ["scripts/**", "supabase/**"],
     },
     jsPlugins: [
       {
