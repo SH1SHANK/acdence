@@ -1,0 +1,115 @@
+
+==================== PAGE 1 ====================
+•
+Published using Google Docs
+Viva Preparation Checklist Before viva starts
+Report abuse
+Learn more
+Updated automatically every 5 minutes
+Important Note:
+New Camera Setup (For both level 1 and level 2):
+• Students need to join meet from both phone and pc.
+• You have to keep the phone in a manner where both hand, face and laptop screen
+are visible in the phone camera and thev have to be on mute from one of the
+devices to avoid echo.
+BE READY WITH YOUR OPPE LIKE CAMERA SETUP BEFORE THE VIVA STARTS.
+AMERA SETUP DONE AFTER THE VIVA HAS STARTED WILL B
+OUNTED UNDER THE 10-MINUTE RULE. IF YOU FAIL TO COMPLETE THE
+SETUP AND RUN YOUR APPLICATION WITHIN THIS TIME, YOU WILL BE
+MARKED AS FAILED (For Level 1 viva).
+• NO RESCHEDULING WILL BE PROVIDED IN SUCH CASES.
+Level 1 Viva Guidelines for MAD-1 and MAD-2
+1. You will hi
+ve 30 minutes to showcase your application. No additional time will be
+2. Level-1 Viva Req
+ents (updated):
+• If a student is unable to run their application without assistance from the
+proctor within the first 10 minutes, they will fail the viva. Additionally, if the
+proctor believes that the student has not completed the project
+independently, the student may be flagged for malpractice.
+• Students are required to demonstrate the core functionality of their
+application, answer 1-2 theory questions, and make code modifications
+during the Level-1 viva.
+• Students who have not created a GitHub repository or added the AppDev
+team as collaborators will incur a penalty of 6-7 marks on the theory
+3. If absent or unable to complete the demonstration within 30 minutes:
+• Rescheduling is not possible due to the high number of participants and
+• Your proctor will evaluate your performance based on what is
+demonstrated within the given timeframe (30 minutes).
+4. Scoring and Progression:
+• If your score does not meet the minimum threshold, you will not qualify for
+5. Avoid unne
+against you.
+ry arguments with proctors; it may lead to disciplinary action
+6. Any AI/LLM used in Code Editor during viva (both viva) will not be allowed. ( new)
+7. If used AI/LLM to create the project, mention how much percentage was used in
+the project report. (refer to this doc)
+8. You will receive the viva schedule email within 12-24 hours of scheduled time. If
+the email does not arrive, please wait patiently. (e.g. If your viva is scheduled for
+10 AM tomorrow, you will receive the email by this evening.)
+9. If your PC camera is not working at the time of viva use your phone camera. Be
+ready with the setup beforehand, don't wait for viva to start and do the setup
+there. Join the meet link 10 minutes prior to the viva timing.
+Trivia: Average time for level 1 viva MAD-1: 15-20 minutes, MAD-2: 25-30 minutes
+Have you submitted your project? Not Yet? Check this video on how to upload the
+submission file
+Viva Preparation Checklist Before viva starts:
+1. Be Ready to Run the Code: Ensure your project is fully ready to execute without delays.
+2. Open your Github Profile: Open your github repository to show if you have added us as the
+collaborator.
+3. Celery Task Timing: Know how to configure task timings before running Celery servers.
+(for MAD-2, not for MAD-1)
+4. Server Commands: Keep all required server commands noted in a text file for easy copy-
+
+==================== PAGE 2 ====================
+5. Keep ID Card Handy: Open vour student ID card on the browser to avoid delays.
+6. Checksum and File Testing
+• Vandate the checksum using the script provided below.
+• If the checksum mismatches, follow the instructions to extract and revalidate (
+Proctor will help if needed).
+7. Avoid Debugging: Skip virtual environments if they cause issues, install packages globally if
+8. Test Core Features: Focus on ensuring all major features work. Any changes to the code
+will change the checksum.
+9. You can use previously created virtual environments venv ) after running the checksum to
+avoid wastine time
+• If MAD-1 and MAD-2:
+• You can cut and paste already created the venv
+• If MAD-2:
+• You can cut and paste already created the node modules ( if using Vuc
+CLI/Vite) or install it immediately using nom instal
+Generate Checksum:
+Use the following script to create a checksum for a folder:
+1. Run this command in your terminal/emd/powershell
+Ino module named pke resources" this error comes, use pip install setuptoo.
+2. Create a python (check.py) file copy-paste this code in that file.
+3. Add this file to the same directory where your unzipped folder is.
+4. Run the checksum file using this code python check py
+• check.py
+# Replace folder _name" with the actual folder pat
+I-Viva Folder/New folder
+I-xyz zip ( downloaded file)
+L-app_floder (sabmitted folder)
+-check.py (checksum file)
+Note:
+• Replace folder samei with the actual folder name or path.
+• The checksum changes even with a single character modification in the project.
+Image for help:
+: checksundin
+If Checksum Mismatches:
+Steps to Follow (for macOS or other OS if needed):
+1. Programmatically extract the ZIP file using the following script(create file named unzip.py):
+from zipfile import ZipFile
+• Replace file name with the path to the ZIP file
+with ZipFile(file name", 1) as zip
+zip.extractall("Unzipped
+printi Extracted successfally to Unzipped folder.
+2. Run the checksum script on the newly created folder (Unzipped):
+import chee candi
+hash = checksumdar/dirhasex Unzipped
+print Directory Checksam for Unzipped:, hash
+3. If the checksum still mismatches, ensure you are using the exact submission downloaded
+from the course portal and after the proctor confirms you can start your viva
+Note: If you are not able to pass the validation check, check out this doc. ( for Mac users)
+
+==================== PAGE 3 ====================
+Pro Tip: Always test these scripts beforehand to avoid last-minute surprises.
