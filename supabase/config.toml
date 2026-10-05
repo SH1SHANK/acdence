@@ -1,0 +1,21 @@
+# Supabase Edge Functions Configuration
+project_id = "aocrcrdmwmdtthrwypii"
+
+[functions.deadline-notifications]
+enabled = true
+verify_jwt = false
+import_map = "./functions/deadline-notifications/deno.json"
+entrypoint = "./functions/deadline-notifications/index.ts"
+
+[functions.grade-sync]
+enabled = true
+verify_jwt = false
+import_map = "./functions/grade-sync/deno.json"
+entrypoint = "./functions/grade-sync/index.ts"
+
+[functions.email-ingest]
+enabled = true
+verify_jwt = false
+import_map = "./functions/email-ingest/deno.json"
+entrypoint = "./functions/email-ingest/index.ts"
+
